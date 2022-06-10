@@ -21,15 +21,15 @@
 
 .logo_place_header {
   position: absolute;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   display: flex;
   align-items: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
@@ -38,7 +38,8 @@
 
 .header__subtitle {
   position: absolute;
-  width: 388px;
+  max-width: 388px;
+  margin: 0;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
@@ -56,6 +57,7 @@
   position: absolute;
   width: 765px;
   height: 608px;
+  object-fit: cover;
   right: 0;
   bottom: 0;
   z-index: 1;
@@ -84,7 +86,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   margin: 0;
   line-height: 1.2;
   font-size: 18px;
@@ -124,7 +126,7 @@
 
 .section-title {
   margin: 0;
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -132,8 +134,8 @@
 }
 
 .section-subtitle {
-  width: 60%;
-  margin-top: 20px;
+  max-width: 60%;
+  margin: 20px 0 0 0;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -145,6 +147,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
 .table__cell {
@@ -173,7 +178,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   margin-top: 100px;
   background-color: #f2f2f2;
@@ -184,7 +189,7 @@
 
 .feynman__title {
   margin: 100px 0 0 0;
-  width: 780px;
+  max-width: 780px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -193,7 +198,7 @@
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px 0 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -228,7 +233,6 @@
   padding-bottom: 90px;
   position: relative;
   overflow: hidden;
-
 }
 
 .section-title_theme_dark {
@@ -272,6 +276,8 @@
 }
 
 .kaufman__triangle {
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: cover;
   position: absolute;
   width: 877px;
   height: 877px;
@@ -295,7 +301,8 @@
   margin-bottom: 40px;
 }
 
-.footer__columns_content_copyright {
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -317,7 +324,7 @@
   font-weight: 700;
 }
 
-.two-columns_links {
+.footer__column-links {
   margin-top: 20px;
   margin-bottom: 16px;
 }
